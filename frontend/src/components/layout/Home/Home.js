@@ -7,14 +7,17 @@ import "./Home.css";
 
 export default function Home() {
     return (
+        
         <div className="bg-home">
 
-            <div className="header-content">
+            <div className="header-content gradient">
                 <Navigation />
                 <div className="container-title">
                     <div>
-                    <h1 className="title">SKYE Texas</h1>
-                    <p className="title">Hill Country Resort</p>
+                    <h1 className="title">SKYE Texas
+                    <p >Hill Country Resort</p>
+                    </h1>
+                    
                     </div>
                     <div className="text-header">
                         <p>Experience nature in remarkable confort at this luxurious new concept in outdoor hospitality.</p>

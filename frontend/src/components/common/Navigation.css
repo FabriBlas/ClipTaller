@@ -4,7 +4,7 @@
 }
 /* Make it trasparent and padding vertical*/
 .navbar{
-    padding: 70px 0;
+    padding: 3rem 0;
     background-color: transparent!important;
 }
 
@@ -13,14 +13,18 @@
     padding: 0;
 }
 .nav-sm-icon {
-    padding: 0 20px 0 0;
+    padding: 0 1.3vw 0 0;
 }
 .nav-sm-icon:last-of-type{
     padding-right: 0px;
 }
+.nav-link img{
+    width: 1.5vw
+}
 
 /* Correct size of the brand logo*/
-.navbar-brand {
-    width: 120px;
-    height: 67px;
+.navbar-brand img{
+    width: 6.25vw;
+    height: 3.4vw;
+    
 }

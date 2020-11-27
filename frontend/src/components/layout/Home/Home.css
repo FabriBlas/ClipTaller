@@ -1,25 +1,43 @@
+/* Background with opacity and gradient*/
 .bg-home {
 
     background-image: url(../../../img/background_heroimage.png);
     background-size: cover;
     height: 100vh;
-    min-height: 48rem;
     background-position: center center;
+
 }
 
-.bg-home::before {
+.bg-home:before {
     content: '';
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    min-height: 48rem;
-    background-color: #2E4E42cc;
+    background: #2E4E42 0% 0% no-repeat padding-box;
+    opacity: 0.8;
+    
+}
+.gradient{
+    position: relative;
+}
+.gradient:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%) no-repeat padding-box;
+    opacity: 0.5;
+    
 }
 
+/* Header styles */
+
 .header-content {
-    height: 85%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -30,36 +48,37 @@
 
     margin: 0 auto;
     color: #fff;
-    max-width: 800px;
+    max-width: 80rem;
     position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     text-align: center;
-    height: 30rem;
+    height: 50rem;
 }
 
-/* Fuentes */
+/* Fonts  */
 .title {
     /* Solucion del streching */
-    -webkit-transform: scale(0.7, 1);
+    -webkit-transform: scale(0.75, 1);
     /* Safari and Chrome */
-    -moz-transform: scale(0.7, 1);
+    -moz-transform: scale(0.75, 1);
     /* Firefox */
-    -ms-transform: scale(0.7, 1);
+    -ms-transform: scale(0.75, 1);
     /* IE 9 */
-    -o-transform: scale(0.7, 1);
+    -o-transform: scale(0.75, 1);
     /* Opera */
-    transform: scale(0.7, 1);
+    transform: scale(0.75, 1);
     /* W3C */
 
     /* Propiedades de la fuente */
-    font-size: 80px;
-    font-family: Bodoni;
+    font-size: 4.3vw;
+    font-family:"ltc-bodoni-175";
     font-weight: bold;
     text-align: center;
     letter-spacing: 0px;
-    line-height: 0.8;
+    line-height: 1;
+    margin-bottom: 3rem;
     color: #FFFFFF;
     opacity: 1;
 
@@ -67,14 +86,15 @@
 
 .text-header {
     margin: 0 auto;
-    max-width: 530px;
+    max-width: 27.6vw;
+    font-size: 0.93vw;
     font-family: 'Titillium Web', sans-serif;
     text-align: center;
-    letter-spacing: 0.45px;
+    letter-spacing: 0.02vw;
     color: #FFFFFF;
     opacity: 1;
 }
-
+/* Scrool icon and text */
 .scroll-down p {
     /* Solucion del streching */
     -webkit-transform: scale(0.7, 1);
@@ -88,14 +108,17 @@
     transform: scale(0.7, 1);
     /* W3C */
     
-    font-family: Bodoni;
-    font-size: 16px;
+    font-family:"ltc-bodoni-175";
+    font-size: 0.8vw;
     padding-bottom: 0.5rem;
     margin-bottom: 0;
-    margin-top: 4rem;
+    margin-top: 3.5vw;
     text-align: center;
-    letter-spacing: 1.6px;
+    letter-spacing: 0.08vw;
     color: #EAB64E;
     opacity: 1;
     font-weight: bold;
+}
+.scroll-down img {
+    width: 1.55vw;
 }
