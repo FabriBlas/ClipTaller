@@ -1,0 +1,26 @@
+/* Container of navbar */
+.container{
+    max-width: 75%;
+}
+/* Make it trasparent and padding vertical*/
+.navbar{
+    padding: 70px 0;
+    background-color: transparent!important;
+}
+
+/* Make the correct padding of the icons */
+.nav-sm-icon .nav-link{
+    padding: 0;
+}
+.nav-sm-icon {
+    padding: 0 20px 0 0;
+}
+.nav-sm-icon:last-of-type{
+    padding-right: 0px;
+}
+
+/* Correct size of the brand logo*/
+.navbar-brand {
+    width: 120px;
+    height: 67px;
+}
