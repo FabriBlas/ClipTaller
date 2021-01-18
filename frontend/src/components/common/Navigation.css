@@ -1,0 +1,82 @@
+/*
+Use view heigh (vh) unity of measure for responsive view of blocks
+*/
+
+/* Container of navbar */
+.container{
+    max-width: 75%;
+}
+/* Make it trasparent and padding vertical*/
+.navbar{
+    padding: 6vh 0;
+    background-color: transparent!important;
+}
+
+/* Make the correct padding of the icons */
+.nav-sm-icon .nav-link{
+    padding: 0;
+}
+.nav-sm-icon {
+    padding: 0 2.6vh 0 0;
+}
+.nav-sm-icon:last-of-type{
+    padding-right: 0px;
+}
+.nav-link img{
+    width: 3vh;
+}
+
+/* Correct size of the brand logo*/
+.navbar-brand img{
+    width: 12.5vh;
+    height: 6.8vh;
+}
+
+.footer{
+  height: 60vh;
+  background-color: #2E4E42;
+}
+
+.footer p{
+  color: #F0F4F7;
+  font-size: 1.85vh;
+  font-family: 'Titillium Web', sans-serif;
+  font-weight:200;
+  letter-spacing: 0.04vh;
+  margin-bottom: 0;
+}
+
+.footer-flex{
+  display:flex;
+  flex-direction:column;
+  text-align:center;
+  justify-content:space-between;
+  height:100%;
+}
+
+.branch-logo{
+  width: 11vh;
+  margin: 0 auto;
+  margin-top: 13vh;
+}
+
+.rights{
+  margin-bottom: 10vh;
+}
+
+.icons{
+  margin: 0 auto;
+  margin-top: 1vh;
+  display: flex;
+}
+
+.icons img{ 
+  width: 2.5vh;
+}
+
+.rectangle-footer{
+  width: 5vh;
+  margin: 2vh auto;
+  height: 0.4vh;
+  background-color: #49846C;
+}

@@ -1,0 +1,557 @@
+/*
+Css for all Home page view
+Use view heigh (vh) unity of measure for responsive view of blocks
+*/
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* Global Css Styles, for common usage in all blocks, all global css styles should be added here*/
+
+/* define a block of content*/
+.block { 
+  height: 100vh;
+}
+/* Use a tag as a flex box */
+.d-flex{ 
+  display: flex;
+}
+/* Vertical orientation of the flex box */
+.d-flex-vertical{
+  flex-direction: column;
+}
+/* Flexbox centered */
+.d-flex-centered{
+  height: 100%;
+  justify-content: center;
+}
+/* Use a tag as a grid */
+.d-grid{
+  display: grid;
+}
+/* Title style for all blocks */
+.title{
+  
+/* Streching Solution*/
+-webkit-transform: scale(0.75, 1);
+/* Safari and Chrome */
+-moz-transform: scale(0.75, 1);
+/* Firefox */
+-ms-transform: scale(0.75, 1);
+/* IE 9 */
+-o-transform: scale(0.75, 1);
+/* Opera */
+transform: scale(0.75, 1);
+/* W3C */
+
+/* Font Properties */
+font-family:"ltc-bodoni-175";
+font-weight: bold;
+font-size: 5.4vh;
+text-align: left;
+letter-spacing: 0px;
+color: #2E4E42;
+opacity: 1;
+}
+
+/* Padding bottom */
+.pd{
+  margin-bottom: 10vh;
+}
+
+/* Text style of all blocks */
+.text {
+  font-size: 1.85vh;
+  font-family: 'Titillium Web', sans-serif;
+  text-align: left;
+  letter-spacing: 0.04vh;
+  color: #49846C;
+  opacity: 1;
+  margin-bottom: 5vh;        
+  }
+.text p {
+  margin: 0;
+}
+
+/* End of Global styles */
+/* ------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+/* Background with opacity and gradient*/
+.bg-home {
+
+  background-image: url(../../../img/background_heroimage.png);
+  background-size: cover;
+  height: 100vh;
+  background-position: center center;
+}
+
+/* Opacity property */
+.bg-home:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #2E4E42 0% 0% no-repeat padding-box;
+  opacity: 0.8;
+  
+}
+
+/* Gradient Property */
+.gradient{
+  position: relative;
+}
+.gradient:before{
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%) no-repeat padding-box;
+  opacity: 0.5;
+  
+}
+
+/* Header styles */
+
+.header-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.container-title {
+
+  margin: 0 auto;
+  color: #fff;
+  max-width: 146.35vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  height: 80.84vh;
+}
+
+/* Fonts  */
+.title-header {
+  /* Solucion del streching */
+  -webkit-transform: scale(0.75, 1);
+  /* Safari and Chrome */
+  -moz-transform: scale(0.75, 1);
+  /* Firefox */
+  -ms-transform: scale(0.75, 1);
+  /* IE 9 */
+  -o-transform: scale(0.75, 1);
+  /* Opera */
+  transform: scale(0.75, 1);
+  /* W3C */
+
+  /* Propiedades de la fuente */
+  font-size: 8vh;
+  font-family:"ltc-bodoni-175";
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 1;
+  margin-bottom: 5vh;
+  color: #FFFFFF;
+  opacity: 1;
+
+}
+
+.text-header {
+  margin: 0 auto;
+  max-width: 50vh;
+  font-size: 1.8vh;
+  font-family: 'Titillium Web', sans-serif;
+  text-align: center;
+  letter-spacing: 0.04vh;
+  color: #FFFFFF;
+  opacity: 1;
+}
+/* Scroll icon and text */
+.scroll-down p {
+  /* Streching Solution */
+  -webkit-transform: scale(0.7, 1);
+  /* Safari and Chrome */
+  -moz-transform: scale(0.7, 1);
+  /* Firefox */
+  -ms-transform: scale(0.7, 1);
+  /* IE 9 */
+  -o-transform: scale(0.7, 1);
+  /* Opera */
+  transform: scale(0.7, 1);
+  /* W3C */
+  
+  font-family:"ltc-bodoni-175";
+  font-size: 1.6vh;
+  padding-bottom: 0.81vh;
+  margin-bottom: 0;
+  margin-top: 8vh;
+  text-align: center;
+  letter-spacing: 0.16vh;
+  color: #EAB64E;
+  opacity: 1;
+  font-weight: bold;
+}
+.scroll-down img {
+  width: 3vh;
+}
+
+/*
+Popular Attractions Styles
+First Block
+*/
+
+.container-attractions {
+  
+  height: 100%; 
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.rectangle-header {
+  
+  width: 8vh;
+  height: 0.8vh;
+  background: #EAB64E 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+
+.title-attractions {
+
+margin-left:-10.4vw;
+}
+
+
+
+.text-attractions p{
+margin: 0;
+}
+
+/* Carousel Styles */
+
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+
+.container-carousel{
+margin-left: 13%;
+}
+  
+.carousel{
+height: auto;
+}
+  
+.carousel img{
+width: 95%;
+height: auto;
+}
+  
+.header-block{
+margin-top: 5vh;
+}
+
+/*Button Propierties*/
+.prev {
+margin-left: 80%;
+display: inline-block;
+font-size: 2.11vh;
+}
+
+.next {
+display: inline-block;
+font-size: 2.11vh;
+}
+
+/* Button circle */
+.btn-circle {
+width: 40px;
+height: 40px;
+padding: 6px 0px;
+margin-right: 5px;
+border-radius: 25px;
+text-align: center; 
+border: 2px #49846C solid;
+line-height: 1.42857;
+color:#49846C;
+}
+.btn-circle:last-child{
+margin-right: 0;
+}
+
+/* Button circle hover effect */
+.btn-circle:hover, .btn-circle:focus, .btn-circle:active, .btn-circle.active, .open>.dropdown-toggle.btn-circle {
+color: #fff;
+background-color: #49846C;
+}
+
+/* Accommodation */
+
+.title-accommodation{
+  margin-left: -14%;
+}
+.accommodation-flex ul{
+  padding-inline-start: 0;
+  padding: 0
+}
+
+
+.accommodation-list{
+  flex: 1 1 0;
+  list-style: none;
+}
+.accommodation-list li::before{
+  content: "\2022";
+  color: #EAB64E;
+  font-weight: bold;
+  display: inline-block; 
+  width: 1em;
+  margin-left: 0;
+}
+.accommodation-list li{
+  margin-bottom: 1.5vh;
+}
+.accommodation-grid{
+  width: 30vh;
+  grid-template-columns: 36% 24.4% 36%;
+  grid-column-gap: 2vh;
+  grid-row-gap: 2vh;
+  flex: 2.3 1 0;
+}
+.accommodation-grid img{
+  width: 100%;
+  height: auto;
+  position:relative;
+  z-index:-1;
+  display:block;
+}
+.accommodation-grid :nth-child(1){
+  grid-column: 1/3;
+}
+.accommodation-grid :nth-child(4){
+  grid-column: 3/4;
+}
+.accommodation-grid :nth-child(3){
+  grid-column: 1/2;
+}
+.accommodation-grid :nth-child(4){
+  grid-column: 2/4;
+  grid-row: 2/3;
+}
+
+.accommodation-flex{
+  justify-content: space-between;
+}
+
+.accommodation-img-gradient{
+  position: relative;
+  display:inline-block;
+  background: linear-gradient(180deg,  rgba(0,0,0,0) 60%,rgba(0,0,0,0.9) 100%) no-repeat padding-box;
+}
+.img-caption{
+  color: rgba(255,255,255,0.6);
+  font-size: 1.8vh;
+  position: absolute;
+  bottom: 0;
+  margin-left: 2vh;
+  font-family: 'Titillium Web', sans-serif;
+}
+/*
+Natural Preserve Styles
+Second Block
+*/
+
+.blockNatural {
+  height: 150vh;
+  background: #F0F4F7 0% 0% no-repeat padding-box;
+  opacity: 1;
+  margin-top:3vh;
+}
+
+.container-natural {
+  
+  height: 100%; 
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.rectangle-header {
+  
+  width: 8vh;
+  height: 0.8vh;
+  background: #EAB64E 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+
+.title-natural {
+  
+/* Streching Solution*/
+-webkit-transform: scale(0.75, 1);
+/* Safari and Chrome */
+-moz-transform: scale(0.75, 1);
+/* Firefox */
+-ms-transform: scale(0.75, 1);
+/* IE 9 */
+-o-transform: scale(0.75, 1);
+/* Opera */
+transform: scale(0.75, 1);
+/* W3C */
+
+/* Font Properties */
+font-family:"ltc-bodoni-175";
+font-weight: bold;
+font-size:6.2vh;
+text-align: left;
+letter-spacing: 0px;
+color: #2E4E42;
+opacity: 1;
+margin-left:-10.4vw;
+}
+
+.text-natural {
+font-size: 2vh;
+font-family: 'Titillium Web', sans-serif;
+text-align: left;
+letter-spacing: 0.04vh;
+color: #49846C;
+opacity: 1;
+margin-bottom: 5vh;        
+}
+
+.text-natural p{
+margin: 0;
+}
+.grid{
+  display: grid;
+  grid-template-columns:30.5% 21.7% 24% 21.7% ;
+  grid-template-rows:repeat(3, 1fr);
+  width: 71vw;
+  grid-gap:1.8vh 1.8vh;
+ 
+
+}
+.img-item{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.grid img:nth-child(1){
+  grid-row:1/3;
+}
+.grid img:nth-child(3){
+  grid-column:3/5;
+  }
+.grid img:nth-child(4){
+  grid-column:2/4;
+  grid-row:2/3;
+    }
+.grid img:nth-child(6){
+  grid-column:1/3;
+}
+.grid img:nth-child(7){
+  grid-column:3/5;
+        }
+ /*
+Subscribe Styles
+ Block
+*/
+
+/* test block */
+.relative{
+  position: relative;
+}
+
+ .subscribe{
+  width:75vw;
+  height:17vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  background:#EAB64E 0% 0% no-repeat padding-box;
+  box-shadow: 0px 10px 25px #2E4E4233;
+  border-radius: 16px;
+  opacity: 1;
+  margin-left: 25vh;
+  position: absolute;
+  z-index: 1;
+  top: 102vh;
+}
+
+.title-subscribe h1{
+  /* Streching Solution*/
+  -webkit-transform: scale(0.75, 1);
+/* Safari and Chrome */
+  -moz-transform: scale(0.75, 1);
+/* Firefox */
+  -ms-transform: scale(0.75, 1);
+/* IE 9 */
+  -o-transform: scale(0.75, 1);
+/* Opera */
+  transform: scale(0.75, 1);
+/* W3C */
+
+/* Font Properties */
+  font-family:"ltc-bodoni-175";
+  font-weight: bold;
+  font-size:5vh;
+  text-align: left;
+  letter-spacing: 0px;
+  color: #2E4E42;
+  opacity: 1;
+  padding-top: 5.2vh;
+  padding-left: 3vh;
+}
+
+.form-subscribe{
+  padding-top: 5.2vh;
+  display:inline-flex;
+  position: relative;
+}
+
+.input-subscribe{
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  border-radius: 24px;
+  text-align:left;
+  letter-spacing: 0.45px;
+  color: #49846C;
+  opacity: 1;
+  width:30vw;
+  border: white;
+  height: 6.5vh;
+  position: relative;
+  margin-left:-5vh;
+}
+
+::-webkit-input-placeholder{
+  padding-left: 2vh;
+}
+
+.button-subscribe{
+  background: #49846C 0% 0% no-repeat padding-box;
+  border-radius: 24px;
+  text-align: center;
+  letter-spacing: 0.45px;
+  color: #FEFEFE;
+  opacity: 1;
+  border: white;
+  width: 25vh;
+  height: 6.5vh;
+  position: absolute;
+  z-index: 1;
+  right: -5vh;
+}
+ 
+
+
+.map {
+  height: 60vh;
+  width: 100%;
+  background: #49846C 0% 0% no-repeat padding-box;
+  /* opacity: 0.25; */
+}
